@@ -13,5 +13,4 @@ npp_res = gccm(data = npp,cause = "pre",effect = "npp",libsizes = seq(10,130,5),
 endTime = Sys.time()
 print(difftime(endTime,startTime, units ="mins"))
 npp_res
-plot(npp_res,xlimits = c(9, 101),ylimits = c(-0.05,1))
 
