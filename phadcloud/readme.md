@@ -8,7 +8,7 @@ Then, select the slurm script and run:
 sbatch run.slurm
 ```
 
-If the HPC throw the error of `sbatch: error: Batch script contains DOS line breaks (\r\n) \\n sbatch: error: instead of expected UNIX line breaks (\n).`, try :
+If the HPC throws the error of `sbatch: error: Batch script contains DOS line breaks (\r\n) \\n sbatch: error: instead of expected UNIX line breaks (\n).`, try :
 
 ```bash
 sed -i 's/\r$//' run.slurm
