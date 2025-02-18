@@ -191,6 +191,6 @@ install_r_package "remotes"
 install_r_package "sf"
 install_r_package "terra"
 
-Rscript -e 'remotes::install_github("stscl/spEDM",dep = TRUE)'
+# Rscript -e 'remotes::install_github("stscl/spEDM",dep = TRUE)'
 
 echo "All tasks completed!"
