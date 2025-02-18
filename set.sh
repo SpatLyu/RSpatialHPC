@@ -1,8 +1,3 @@
-# apt update
-# apt install gfortran -y
-# apt install libmysqlclient-dev -y
-# apt install libudunits2-dev libgdal-dev libgeos-dev libproj-dev libsqlite3-dev -y
-
 # View Ubuntu system information
 echo "Viewing Ubuntu system information..."
 lsb_release -a
@@ -54,6 +49,7 @@ sudo apt install --no-install-recommends r-base r-base-dev -y
 # Install R package dependencies
 echo "Installing R package dependencies..."
 sudo apt install libfontconfig1-dev libfreetype6-dev libcurl4-openssl-dev libssl-dev libxml2-dev libharfbuzz-dev libfribidi-dev libicu-dev libpng-dev libtiff5-dev libjpeg-dev libmagick++-dev libblas-dev liblapack-dev libarmadillo-dev -y
+sudo apt install libmysqlclient-dev -y
 
 # Add ubuntugis unstable PPA
 echo "Adding ubuntugis unstable PPA..."
