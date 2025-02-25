@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH -J test
-#SBATCH -p TEST_INTEL_8581            ##8581C分区测试队列
-##SBATCH -p INTEL_8581                ##8581C分区正式队列
-#SBATCH --nodes=1                     ##指定节点数
-#SBATCH --ntasks-per-node=32          ##指定核心数
-#SBATCH -o out_%j.log
-#SBATCH -e error_%j.log
+#SBATCH -J GCCM_PreNPP
+#SBATCH -p INTEL_8581  
+##SBATCH -p INTEL_8581                
+#SBATCH -N 1                
+#SBATCH -n 48
+#SBATCH -o ./result/out_%j.log
+#SBATCH -e ./result/error_%j.log
 
 ulimit -l unlimited
-Rscript test.r
+Rscript GCCM_PreNPP.R

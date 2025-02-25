@@ -1,1 +1,0 @@
-install.packages("spEDM_1.5.tar.gz", repos = NULL, type = "source")
