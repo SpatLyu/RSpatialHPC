@@ -5,15 +5,8 @@ nnamat = terra::as.matrix(npp[[1]], wide = TRUE)
 nnaindice = which(!is.na(nnamat), arr.ind = TRUE)
 set.seed(42)
 indices = sample(nrow(nnaindice), size = 1500, replace = FALSE)
-lib = nnaindice[-indices,]
-pred = nnaindice[indices,]
-
-startTime = Sys.time()
-npp_res = gccm(data = npp,cause = "pre",effect = "npp",libsizes = seq(100,1500,100),
-               E = c(2,6), k = 5, lib= pred, pred = pred, progressbar = TRUE)
-endTime = Sys.time()
-print(difftime(endTime,startTime, units ="mins"))
-npp_res
+libindice = nnaindice[-indices,]
+predindice = nnaindice[indices,]
 
 startTime = Sys.time()
 g = spEDM::gccm(data = npp,
@@ -23,9 +16,15 @@ g = spEDM::gccm(data = npp,
             E = c(2,6),
             k = 5,
             lib = nnaindice,
-            pred = pred,
-            trend.rm = TRUE,
+            pred = predindice,
             progressbar = TRUE)
 endTime = Sys.time()
 print(difftime(endTime,startTime, units ="mins"))
 g
+
+startTime = Sys.time()
+npp_res = gccm(data = npp,cause = "pre",effect = "npp",libsizes = seq(100,1500,100),
+               E = c(2,6), k = 5, lib= predindice, pred = predindice, progressbar = TRUE)
+endTime = Sys.time()
+print(difftime(endTime,startTime, units ="mins"))
+npp_res
