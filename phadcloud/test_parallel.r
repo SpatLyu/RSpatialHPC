@@ -30,7 +30,7 @@ print(difftime(endTime,startTime, units ="mins"))
 
 startTime = Sys.time()
 npp_res2 = gccm(data = npp,cause = "pre",effect = "npp",libsizes = seq(100,1500,100), E = c(2,6), k = 5, 
-lib= predindice, pred = predindice, parallel.level = "higher",progressbar = TRUE)
+lib= predindice, pred = predindice, parallel.level = "high",progressbar = TRUE)
 endTime = Sys.time()
 print(difftime(endTime,startTime, units ="mins"))
 
