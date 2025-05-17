@@ -9,7 +9,7 @@ mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge r-xml
 # Rscript - e "install.packages('RcppArmadillo', repos = 'https://mirrors.bfsu.edu.cn/CRAN/', dep = TRUE)"
 # Rscript - e "install.packages('terra', repos = 'https://mirrors.bfsu.edu.cn/CRAN/', dep = TRUE)"
 # Rscript - e "install.packages('sgsR', repos = 'https://mirrors.bfsu.edu.cn/CRAN/', dep = TRUE)"
-# Rscript - e "install.packages('spEDM_1.6.tar.gz', repos = NULL, type = 'source')"
+# Rscript - e "install.packages('spEDM_1.7.tar.gz', repos = NULL, type = 'source')"
 
 conda create -n pyspatial python=3.11 -y
 conda activate pyspatial
