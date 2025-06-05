@@ -16,3 +16,5 @@ conda activate pyspatial
 conda install mamba -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge -y
 mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge pysal ipykernel -y
 mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge openpyxl xlwt xlrd ruptures mpart -y
+
+srun --partition=INTEL_8581 --nodes=1 --ntasks=1 --time=1:00:00 --pty bash
