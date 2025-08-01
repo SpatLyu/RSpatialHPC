@@ -17,4 +17,8 @@ conda install mamba -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge
 mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge pysal ipykernel -y
 mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge openpyxl xlwt xlrd ruptures mpart -y
 
-srun --partition=INTEL_8581 --nodes=1 --ntasks=1 --time=1:00:00 --pty bash
+# build r pkgs in phadcloud
+# srun --partition=INTEL_8581 --nodes=1 --ntasks=1 --time=1:00:00 --pty bash
+
+# install.packages('spEDM_1.8.tar.gz', repos = NULL, type = 'source')
+# install.packages('tEDM_1.1.tar.gz', repos = NULL, type = 'source')
