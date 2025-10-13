@@ -1,10 +1,10 @@
-conda create -n rspatial -y
+conda create -n rspatial python=3.11 -y
 conda activate rspatial
 conda install mamba -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge -y
 mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge r-base r-essentials r-devtools r-languageserver -y
 mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge r-sf r-terra r-spatialreg r-spdep -y
 mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge r-xml r-plot3d r-ncdf4 r-fasterize r-writexl -y
-# mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge r-lwgeom -y
+# mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge r-tmap -y
 # Rscript - e "install.packages('tmap', repos = 'https://mirrors.bfsu.edu.cn/CRAN/', dep = TRUE)"
 # Rscript - e "install.packages('RcppArmadillo', repos = 'https://mirrors.bfsu.edu.cn/CRAN/', dep = TRUE)"
 # Rscript - e "install.packages('terra', repos = 'https://mirrors.bfsu.edu.cn/CRAN/', dep = TRUE)"
