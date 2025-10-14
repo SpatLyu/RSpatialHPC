@@ -1,4 +1,4 @@
-conda create -n rspatial python=3.11 -y
+conda create -n rspatial python=3.12 -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge -y
 conda activate rspatial
 conda install mamba -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge -y
 mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge r-base r-essentials r-devtools r-languageserver -y
@@ -11,7 +11,7 @@ mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge r-xml
 # Rscript - e "install.packages('sgsR', repos = 'https://mirrors.bfsu.edu.cn/CRAN/', dep = TRUE)"
 # Rscript - e "install.packages('spEDM_1.8.tar.gz', repos = NULL, type = 'source')"
 
-conda create -n pyspatial python=3.11 -y
+conda create -n pyspatial python=3.12 -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge -y
 conda activate pyspatial
 conda install mamba -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge -y
 mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge pysal ipykernel -y
