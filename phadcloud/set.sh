@@ -21,7 +21,7 @@ mamba install -c https://mirrors.sustech.edu.cn/anaconda/cloud/conda-forge openp
 # srun --partition=INTEL_8581 --nodes=1 --ntasks=1 --time=1:00:00 --pty bash
 
 # install.packages('spEDM_1.12.tar.gz', repos = NULL, type = 'source')
-# install.packages('tEDM_1.2.tar.gz', repos = NULL, type = 'source')
+# install.packages('tEDM_1.3.tar.gz', repos = NULL, type = 'source')
 
 # run r scripts interactively
 # srun --partition=INTEL_8581 --nodes=1 --ntasks=32 --time=1:00:00 --pty bash
